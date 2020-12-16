@@ -22,7 +22,7 @@ ionic 5 + cordova-hot-code-push 热更新插件 demo
 
 - 2、 build /www 代码
 
-      ionic build --engine=cordova --platform=android`
+      ionic build --engine=cordova --platform=android
 
   需要指定 engine 为 cordova， 不然 cordova.js 不会加入到 index.html
 
