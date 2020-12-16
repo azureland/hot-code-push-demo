@@ -48,6 +48,18 @@ ionic 5 + cordova-hot-code-push 热更新插件 demo
 
 ---
 
+## 注意事项
+
+- build apk 的时候,
+
+  记得先 cordova-hcp build
+
+  然后 cordova prepare android
+
+  最后再 cordova build android
+
+  这样才会将 chcp.json 和 chcp.manifest 打包进去。g
+
 ## 测试环境配置
 
 ```
