@@ -1,5 +1,54 @@
 # hot-code-push-demo
-this is a ionic 5 + cordova hot code push plugin demo
+
+ionic 5 + cordova-hot-code-push 热更新插件 demo
+
+---
+
+## 说明
+
+原来的 `cordova-hot-code-push` (https://github.com/nordnet/cordova-hot-code-push) 插件已经不再维护，
+
+现在使用网友维护的 `teh-hot-code-push-plugin` (https://github.com/amosbaby/cordova-hot-code-push)
+
+---
+
+## 使用方法
+
+基本使用方法与原插件一致,
+
+使用流程（android 为例):
+
+- 1、 修改 web 代码。
+
+- 2、 build /www 代码
+
+      ionic build --engine=cordova --platform=android`
+
+  需要指定 engine 为 cordova， 不然 cordova.js 不会加入到 index.html
+
+  执行完之后会生成 www 文件夹。
+
+- 3、 build 热更新的配置
+
+      cordova-hcp build
+
+  执行完之后 www 文件夹里面会多了 chcp.json 和 chcp.manifest
+
+- 4、 将 www 文件夹放上更新服务器上
+
+---
+
+测试的话可以直接
+
+      npm i -g http-server
+
+      http-server www
+
+按顺序 1, 2, 3 build 完即可测试
+
+---
+
+## 测试环境配置
 
 ```
 
