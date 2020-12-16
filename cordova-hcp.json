@@ -1,0 +1,7 @@
+{
+  "name": "hcp-demo",
+  "ios_identifier": "com.cynovan.hcpdemo",
+  "android_identifier": "com.cynovan.hcpdemo",
+  "update": "resume",
+  "content_url": "http://192.168.33.83:8080/"
+}
