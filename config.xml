@@ -21,6 +21,7 @@
     <chcp>
         <auto-download enabled="false" />
         <auto-install enabled="false" />
+        <native-interface version="1" />
         <config-file url="http://192.168.33.83:8080/chcp.json" />
     </chcp>
     <platform name="android">

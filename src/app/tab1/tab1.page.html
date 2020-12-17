@@ -1,17 +1,34 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Hot Code Push API Testing
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    <ion-item (click)="hcpService.getVersionInfo()">
+      <ion-label>获取版本信息</ion-label>
+    </ion-item>
+    <ion-item (click)="hcpService.checkUpdate()">
+      <ion-label>检查是否有更新并下载</ion-label>
+    </ion-item>
+    <ion-item (click)="hcpService.isUpdateAvailableForInstallation()">
+      <ion-label>是否有已下载的可用更新</ion-label>
+    </ion-item>
+    <ion-item (click)="hcpService.installUpdate()">
+      <ion-label>安装更新</ion-label>
+    </ion-item>
+    <ion-item (click)="hcpService.requestApplicationUpdate()">
+      <ion-label>提示跳转应用商店更新 app</ion-label>
+    </ion-item>
+  </ion-list>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-text style="position: absolute; height: 20vh; width: 100vw; bottom: 55px; overflow: scroll;">
+    <p *ngFor="let log of logger.getLogs()" style="margin: 2px 0px;">
+      {{ log }}
+    </p>
+  </ion-text>
+
 </ion-content>

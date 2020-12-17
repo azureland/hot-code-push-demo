@@ -58,7 +58,7 @@ ionic 5 + cordova-hot-code-push 热更新插件 demo
 
   最后再 cordova build android
 
-  这样才会将 chcp.json 和 chcp.manifest 打包进去。g
+  这样才会将 chcp.json 和 chcp.manifest 打包进去。
 
 ## 测试环境配置
 
